@@ -26,7 +26,8 @@
 	content: attr(data-tip);
 	padding: .375em .5em;
 	position: absolute;
-	top: 128%;
+	top: 100%;
+	margin-top: .6em;
 	left: 0;
 	font: normal 1em/1 sans-serif;
 	white-space: nowrap;
