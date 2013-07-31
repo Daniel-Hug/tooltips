@@ -65,7 +65,7 @@ select {
 	height: 2.2em;
 	border: 1px solid #ccc;
 	padding: .375em .75em;
-	border-radius: 4px;
+	border-radius: .2em;
 	cursor: pointer;
 	text-shadow: 0 1px white;
 	box-shadow: inset 0 1.6em 2em -1em #ffffff, inset 0 1px #ffffff;
@@ -78,7 +78,7 @@ select {
 }
 
 [type=file]:active::-webkit-file-upload-button {
-	box-shadow: inset 0 1px 5px -2px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0 .0625em .3125em -.125em rgba(0, 0, 0, 0.4);
 }
 
 /* All buttons except file inputs */
@@ -89,7 +89,7 @@ button {
 	display: inline-block;
 	padding: .375em .75em;
 	cursor: pointer;
-	border-radius: 4px;
+	border-radius: .2em;
 	text-shadow: 0 1px white;
 	box-shadow: inset 0 1.6em 2em -1em #ffffff, inset 0 1px #ffffff;
 	background: #ddd;
@@ -116,7 +116,7 @@ button:focus {
 [type=submit]:active,
 button:active {
 	padding: .45em .75em .3em;
-	box-shadow: inset 0 1px 5px -2px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0 .0625em .3125em -.125em rgba(0, 0, 0, 0.4);
 }
 
 /* Color inputs */
