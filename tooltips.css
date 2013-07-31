@@ -1,34 +1,55 @@
-[data-tip],
+/*
+	Pure CSS tooltips
+*/
+
+
+/* element */
+[data-tip-left],
 [data-tip-right],
 [data-tip-center] {
 	position: relative;
 }
 
-[data-tip]:before,
+
+/* triangle */
+[data-tip-left]:before,
 [data-tip-right]:before,
 [data-tip-center]:before {
 	display: none;
 	content: "";
 	width: 0;
 	border: solid transparent;
-	border-width: 0 .4375em .625em;
 	border-bottom-color: black;
 	position: absolute;
 	top: 100%;
+}
+
+[data-tip-left]:before {
+	border-width: 0 0 .625em .875em;
+	right: 50%;
+}
+
+[data-tip-right]:before {
+	border-width: 0 .875em .625em 0;
+	left: 50%;
+}
+
+[data-tip-center]:before {
+	border-width: 0 .4375em .625em;
 	left: 50%;
 	margin-left: -.4375em;
 }
 
-[data-tip]:after,
+
+/* rounded rectangle */
+[data-tip-left]:after,
 [data-tip-right]:after,
 [data-tip-center]:after {
 	display: none;
-	content: attr(data-tip);
 	padding: .375em .5em;
 	position: absolute;
 	top: 100%;
 	margin-top: .6em;
-	left: 0;
 	font: normal 1em/1 sans-serif;
 	white-space: nowrap;
 	text-shadow: none;
@@ -37,10 +58,16 @@
 	border-radius: .25em;
 }
 
+[data-tip-left]:after {
+	content: attr(data-tip-left);
+	border-top-right-radius: 0;
+	right: 50%;
+}
+
 [data-tip-right]:after {
 	content: attr(data-tip-right);
-	left: auto;
-	right: 0;
+	border-top-left-radius: 0;
+	left: 50%;
 }
 
 [data-tip-center]:after {
@@ -53,8 +80,10 @@
 	transform: translateX(-50%);
 }
 
-[data-tip]:hover:before,
-[data-tip]:hover:after,
+
+/* hover */
+[data-tip-left]:hover:before,
+[data-tip-left]:hover:after,
 [data-tip-right]:hover:before,
 [data-tip-right]:hover:after,
 [data-tip-center]:hover:before,
