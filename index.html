@@ -5,10 +5,27 @@
 	<title>Pure CSS tooltips</title>
 	<link rel="stylesheet" href="fatUI.css">
 	<link rel="stylesheet" href="tooltips.css">
+	<style>
+	body {
+		text-align: center;
+	}
+	
+	img {
+		width: 32px;
+		height: 32px;
+		margin-top: -5px;
+	}
+	
+	button:first-of-type > img {
+		width: 22px;
+		height: 22px;
+		margin: 0 1px 1px;
+	}
+	</style>
 </head>
 <body>
-	<button data-tip="Fork / Clone"><img width=24 height=24 src="http://imgh.us/fork_icon.svg" alt="Fork / Clone"></button>
-	<button data-tip-center="Download"><img width=24 height=24 src="http://imgh.us/download_icon.svg" alt="Download"></button>
-	<button data-tip-right="Export"><img width=24 height=24 src="http://imgh.us/export_icon.svg" alt="Export"></button>
+	<button data-tip-right="Fork / Clone"><img src="http://imgh.us/fork_icon.svg" alt="Fork / Clone"></button>
+	<button data-tip-center="Download"><img src="http://imgh.us/download_icon.svg" alt="Download"></button>
+	<button data-tip-left="Export"><img src="http://imgh.us/export_icon.svg" alt="Export"></button>
 </body>
 </html>
