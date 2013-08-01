@@ -8,6 +8,7 @@
 [data-tip-right],
 [data-tip-center] {
 	position: relative;
+	overflow: visible;
 }
 
 
