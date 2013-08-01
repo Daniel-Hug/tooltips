@@ -7,9 +7,9 @@
 	<link rel="stylesheet" href="tooltips.css">
 	<style>
 	body {
-		margin: .5em 0 0;
-		font-size: 72px;
-		font-size: 6vw;
+		margin: 3.2em 0 0;
+		font-size: 64px;
+		font-size: 6vmin;
 		text-align: center;
 	}
 	
@@ -27,14 +27,26 @@
 	</style>
 </head>
 <body>
-	<button data-tip-right="Fork / Clone"><img src="http://imgh.us/fork_icon.svg" alt="Fork / Clone"></button>
-	<button data-tip-center="Download"><img src="http://imgh.us/download_icon.svg" alt="Download"></button>
-	<button data-tip-left="Export"><img src="http://imgh.us/export_icon.svg" alt="Export"></button>
+
+	<div class="top">
+		<button data-tip-tr="Fork / Clone"><img src="http://imgh.us/fork_icon.svg" alt="Fork / Clone"></button>
+		<button data-tip-tm="Download"><img src="http://imgh.us/download_icon.svg" alt="Download"></button>
+		<button data-tip-tl="Export"><img src="http://imgh.us/export_icon.svg" alt="Export"></button>
+	</div>
+
+	<br>
+
+	<div class="bottom">
+		<button data-tip-br="Fork / Clone"><img src="http://imgh.us/fork_icon.svg" alt="Fork / Clone"></button>
+		<button data-tip-bm="Download"><img src="http://imgh.us/download_icon.svg" alt="Download"></button>
+		<button data-tip-bl="Export"><img src="http://imgh.us/export_icon.svg" alt="Export"></button>
+	</div>
 	
 	<script> // Trigger CSS repaints for nice viewport units:
 	window.addEventListener('resize', function() {
 		document.body.removeChild(document.body.appendChild(document.createElement('style')));
 	});
 	</script>
+
 </body>
 </html>
