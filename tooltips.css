@@ -22,6 +22,7 @@
 	border: solid transparent;
 	border-bottom-color: black;
 	position: absolute;
+	z-index: 99;
 	top: 100%;
 }
 
@@ -47,16 +48,21 @@
 [data-tip-right]:after,
 [data-tip-center]:after {
 	display: none;
-	padding: .375em .5em;
-	position: absolute;
-	top: 100%;
-	margin-top: .6em;
+	
+	/* type & style */
 	font: normal 1em/1 sans-serif;
 	white-space: nowrap;
 	text-shadow: none;
 	color: white;
 	background: black;
 	border-radius: .25em;
+	
+	/* position & size */
+	position: absolute;
+	z-index: 99;
+	top: 100%;
+	margin-top: .6em;
+	padding: .375em .5em;
 }
 
 [data-tip-left]:after {
