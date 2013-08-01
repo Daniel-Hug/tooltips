@@ -3,44 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pure CSS tooltips</title>
-	<link rel="stylesheet" href="fatUI.css">
 	<link rel="stylesheet" href="tooltips.css">
-	<style>
-	body {
-		margin: 3.2em 0 0;
-		font-size: 64px;
-		font-size: 6vmin;
-		text-align: center;
-	}
-	
-	img {
-		width: 2em;
-		height: 2em;
-		margin-top: -.3125em;
-	}
-	
-	button:first-of-type > img {
-		width: 1.375em;
-		height: 1.375em;
-		margin: 0;
-	}
-	</style>
+	<link rel="stylesheet" href="demo.css">
 </head>
 <body>
 
-	<div class="top">
-		<button data-tip-tr="Fork / Clone"><img src="http://imgh.us/fork_icon.svg" alt="Fork / Clone"></button>
-		<button data-tip-tm="Download"><img src="http://imgh.us/download_icon.svg" alt="Download"></button>
-		<button data-tip-tl="Export"><img src="http://imgh.us/export_icon.svg" alt="Export"></button>
-	</div>
+	<button data-tip-tr="Give me some love!"><i>j</i></button>
+	<button data-tip-tm="Twinkle Twinkle!"><i>*</i></button>
+	<button data-tip-tl="What's Up?"><i>l</i></button><br><br>
 
-	<br>
-
-	<div class="bottom">
-		<button data-tip-br="Fork / Clone"><img src="http://imgh.us/fork_icon.svg" alt="Fork / Clone"></button>
-		<button data-tip-bm="Download"><img src="http://imgh.us/download_icon.svg" alt="Download"></button>
-		<button data-tip-bl="Export"><img src="http://imgh.us/export_icon.svg" alt="Export"></button>
-	</div>
+	<button data-tip-br="Check!"><i>%</i></button>
+	<button data-tip-bm="Ding Dong!"><i>9</i></button>
+	<button data-tip-bl="Make some noise!"><i>2</i></button>
 	
 	<script> // Trigger CSS repaints for nice viewport units:
 	window.addEventListener('resize', function() {
